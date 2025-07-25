@@ -104,7 +104,7 @@ nav h1{
     padding: 0px;
     margin-left: 8px;
   }
-  #email_nav:hover{
+  #email_nav:hover, .right #email_nav:active{
   background-color: transparent;
   color: var(--link-color);
   transition: color 0.5s ease-in-out;
