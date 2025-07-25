@@ -104,4 +104,9 @@ nav h1{
     padding: 0px;
     margin-left: 8px;
   }
+  #email_nav:hover{
+  background-color: none;
+  color: var(--link-color);
+  transition: color 0.5s ease-in-out;
+  }
 }
