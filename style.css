@@ -96,7 +96,7 @@ nav h1{
 }
 
 .hero_text .hero_links a{
-  display: inline-block;
+  display: inline-flex;
   font-size: 15px;
   padding: 2px 4px;
   border: 2px solid var(--link-color);
@@ -187,6 +187,6 @@ nav h1{
   }
   .hero_text .hero_links a{
     font-size: 17px;
-    display: flex;
+    
   }
 }
