@@ -187,5 +187,6 @@ nav h1{
   }
   .hero_text .hero_links a{
     font-size: 17px;
+    display: flex;
   }
 }
