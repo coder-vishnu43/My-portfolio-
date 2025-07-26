@@ -22,6 +22,7 @@ body{
 }
 
 a{
+  background-color: transparent;
   color: var(--link-color);
   text-decoration: none;
 }
@@ -33,13 +34,14 @@ nav{
   align-items: center;
   padding: 0px 30px;
   border: 1px solid rgb(0,0,0,0.1);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 nav h1{
   color: var(--text-color);
   font-size: 30px;
-  margin: 0px 70px;
+  margin: 0px 40px;
+  
 }
 
 .right{
@@ -62,16 +64,64 @@ nav h1{
 }
 
 .right a:hover {
+  background-color: transparent;
   color: var(--link-color);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 #email_nav:hover{
   background-color: var(--link-color);
   color: var(--background-color);
   transition: color 0.3s ease-in-out;
 }
+
+/* SECTION 1: HERO */
+.hero{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 70px;
+  gap: 40px;
+}
+
+.hero_text h2{
+  font-size: 40px;
+}
+.hero_text p{
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+.hero_links{
+  margin-left: 90px;
+}
+
+.hero_text .hero_links a{
+  display: inline-block;
+  font-size: 15px;
+  padding: 2px 4px;
+  border: 2px solid var(--link-color);
+  border-radius: 6px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.hero_text .hero_links a:hover ,hero_text .hero_links a:active{
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero .hero_photo img{
+  height: 250px;
+  width: 250px;
+  display: block;
+  object-position: center;
+  border-radius: 50%;
+}
+
+
 /* NAV BAR WINDOW<768 */
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
   nav{
     
     display: flex;
@@ -79,7 +129,7 @@ nav h1{
     align-items: center;
     padding: 0px 30px;
     border: 1px solid #FFFFFF;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   }
   
   nav h1{
@@ -87,6 +137,7 @@ nav h1{
   margin: 0px 20px;
 }
   .right{
+    background-color: transparent;
   margin: 0px 3px;
 }
   
@@ -94,8 +145,10 @@ nav h1{
   display: none;
 }
   .right a{
+    background-color: transparent;
     font-size: 34px;
-    margin-left: 8px;
+    gap: 8px;
+    border-radius: 25px;
   }
   .right #email_nav{
     background-color: transparent;
@@ -104,9 +157,35 @@ nav h1{
     padding: 0px;
     margin-left: 8px;
   }
-  #email_nav:hover, .right #email_nav:active{
-  background-color: transparent;
+  #email_nav:hover{
+  background-color: none;
   color: var(--link-color);
   transition: color 0.5s ease-in-out;
+}
+  /*SECTION 1: HERO WINDOW<768 */
+  .hero{
+    background-color: transparent;
+    flex-direction: column-reverse;
+    display: flex;
+    text-align: centre;
+    padding: 70px 70px;
+    margin-left: -10px;
+    gap: 16px;
+  }
+  
+  .hero_photo img{
+    margin-bottom: 8px;
+  }
+  
+  .hero_text h2{
+    font-size: 35px;
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+  .hero_links{
+    margin-left: 9px;
+  }
+  .hero_text .hero_links a{
+    font-size: 17px;
   }
 }
