@@ -93,8 +93,7 @@ nav h1{
 }
 .hero_links{
   margin-left: 90px;
-  display: inline-flex;
-  flex-direction: column;
+  display: flex;
 }
 
 .hero_text .hero_links a{
@@ -185,10 +184,9 @@ nav h1{
     margin-bottom: 5px;
   }
   .hero_links{
-    margin-left: 5px;
+    margin-left: 9px;
   }
   .hero_text .hero_links a{
     font-size: 17px;
-    
   }
 }
