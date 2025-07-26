@@ -186,6 +186,7 @@ nav h1{
   .hero_links{
     margin-left: 9px;
     display: flex;
+    gap: 3px;
   }
   .hero_text .hero_links a{
     font-size: 17px;
