@@ -168,7 +168,6 @@ nav h1{
     background-color: transparent;
     flex-direction: column-reverse;
     display: flex;
-    text-align: center;
     padding: 70px 70px;
     margin-left: -10px;
     gap: 16px;
@@ -183,7 +182,9 @@ nav h1{
     padding: 0px;
     margin-bottom: 5px;
   }
+ 
   .hero_links{
+    background-color: transparent;
     margin-left: 9px;
     display: flex;
     gap: 3px;
@@ -191,6 +192,8 @@ nav h1{
   }
   .hero_text .hero_links a{
     font-size: 17px;
+    display: flex;
+    
     
   }
 }
